@@ -17,10 +17,15 @@ dependencies = [
     "sentence-transformers>=2.2",
     "bertopic>=0.16",
     "tqdm>=4.65",
+    "jupyter>=1.1.1",
 ]
 
 [project.scripts]
 bp = "bp:main"
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
 
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
